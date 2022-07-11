@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Link, Route, Routes, useNavigate, useParams } 
 import Kalkylator from './Kalkylator';
 import Resultat from './Resultat'
 import Snitthyror from './Snitthyror.js'
+import Startsida from './Startsida';
 // import { useLocation } from 'react-router-dom'
 
 
@@ -32,7 +33,7 @@ class App extends Component {
   renderRouter() {
     return (
       <Routes>
-        <Route path="/" element={<h1> Startsida... </h1>} />
+        <Route path="/" element={<Startsida />} />
         <Route path="/direkt-avkastning" element={
           <><Kalkylator addDirektAvkastning={this.addDirektAvkastning} />
             <Resultat direktAvkastning={this.state.direktAvkastning} /></>

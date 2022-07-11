@@ -50,6 +50,7 @@ class Kalkylator extends Component {
 
     render() {
         return (
+
             <div class="registration-form">
                 <form onSubmit={this.handleSubmit}>
                     <div class="form-group">

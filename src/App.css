@@ -161,6 +161,22 @@ nav.main-menu.expanded {
   font-size: 18px;
 }
 
+
+iframe {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: #777;
+}
+
+
+.registration-form {
+  position: relative;
+  width: 600px;
+  margin: 0px auto;
+}
+
+
 .main-menu .nav-text {
   position: relative;
   display: table-cell;
