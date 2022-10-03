@@ -11,7 +11,7 @@ class Startsida extends Component {
     render() {
         return (
             <div class="jumbotron">
-                <h1 class="display-4">Fasighetsinvesteringar</h1>
+                <h1 class="display-4">Fastighetsinvesteringar</h1>
                 <p class="lead"> Här kan du räkna ut direktavkastning och hitta snitthyrorna för bostäder inom olika värdeområde</p>
                 <hr class="my-4"></hr>
                 <p>Nedan följer en kort förklaring på vad direktavkastning är:</p>

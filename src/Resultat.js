@@ -6,10 +6,6 @@ class Resultat extends Component {
 
     constructor(props) {
         super(props);
-        // this.state = { direktAvkastning: "" };
-        // this.handleChange = this.handleChange.bind(this);
-        // this.handleSubmit = this.handleSubmit.bind(this);
-        // this.beräkning = this.beräkning.bind(this)
     }
 
     render() {
@@ -21,7 +17,7 @@ class Resultat extends Component {
                     <div class="card-body p-5">
                         <h4 class="mb-4">Direktavskastning</h4>
                         <ul class="list-unstyled list pl-5">
-                            <li class="mb-3 d-flex align-items-center"><i class="fa fa-flask mr-3 text-primary"></i>Direktavskastningen är {this.props.direktAvkastning}%</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="fa fa-flask mr-3 text-primary"></i>Direktavskastningen är {isNaN(parseFloat(this.props.direktAvkastning).toFixed(2)) ? 0 : parseFloat(this.props.direktAvkastning).toFixed(2)}%</li>
                             {/* <li class="mb-3 d-flex align-items-center"><i class="fa fa-flask mr-3 text-primary"></i>Lägg till direktavkastning eget kapital</li> */}
                         </ul>
                     </div> </div>      </div>
